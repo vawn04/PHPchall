@@ -49,3 +49,4 @@ if (isset($_POST['calculate'])) {
 </body>
 </html>
 ```
+![Screenshot 2024-01-21 180830](https://github.com/vawn04/PHPchall/assets/154768853/fb4559b4-f18b-458f-ae40-cea25ba9fc65)
