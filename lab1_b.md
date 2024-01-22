@@ -17,27 +17,23 @@ Code
 
 
 <?php
-    // Kiểm tra xem đã submit form chưa
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         // Lấy giá trị từ form
         $number1 = $_POST["number1"];
         $number2 = $_POST["number2"];
 
-        // Kiểm tra xem đã nhập đủ số chưa
         if (!empty($number1) && !empty($number2)) {
             // Thực hiện các phép toán
             $sum = $number1 + $number2;
             $difference = $number1 - $number2;
             $product = $number1 * $number2;
 
-            // Kiểm tra trường hợp chia cho 0
             if ($number2 != 0) {
                 $quotient = $number1 / $number2;
             } else {
                 $quotient = "Không thể chia cho 0";
             }
 
-            // Hiển thị kết quả
             echo "<p>Addition: $sum</p>";
             echo "<p>Subtraction: $difference</p>";
             echo "<p>Multiplication: $product</p>";
