@@ -14,20 +14,17 @@
 
     <?php
   	if ($_SERVER["REQUEST_METHOD"] == "POST") {
- 
-    	// Kiểm tra xem đã nhập n chưa
+
     	 if (empty($_POST["number"])) {
         	echo "Vui lòng nhập n.";
    	 } else {
         	// Nhận giá trị n
         $n = intval($_POST["number"]);
 
-        // Kiểm tra n có là số nguyên dương hay không
         if ($n <= 0) {
             echo "Vui lòng nhập số nguyên dương.";
         } else {
 
-            // Tính tổng dãy số 
             $sum = 0;
             for ($i = 1; $i <= $n; $i++) {
                 $sum += $i;
@@ -43,3 +40,5 @@
 </body>
 </html>
 ```
+
+![image](https://github.com/vawn04/PHPchall/assets/154768853/fcdcb4b0-a7ed-42e5-8782-a043b3007874)
